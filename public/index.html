@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation.min.css" integrity="sha512-TgmH0v8FUwmsr3yDgd5PTCgR6lRZ2Q5c7KsUNTHcoxZpOExCX16MYECIL4xdRQOhQlz7pCnZlmA4zda58QWxBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation-float.min.css" integrity="sha512-LSYG1wfgim4owXFFJrK6pkikbwBr0iF8hCMOo0EFUuF/rut09ry21JGoLx+raCL9oE/no/e18kln42652dy+7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Lobster&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/map-style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Travel Buddy</title>
+</head>
+<body>
+    <header>
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="large">
+        <div class="title-bar-title">Travel Buddy</div>
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+      </div>
+        <nav class="top-bar" id="main-nav">
+            <div class="top-bar-left">
+             <a href="/" class="title">Travel Buddy</a>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu vertical large-horizontal">
+                <li><a href="#france">France</a></li>
+                <li><a href="#spain">Spain</a></li>
+                <li><a href="#italy">Italy</a></li>
+                <li><a href="#germany">Germany</a></li>
+                <li><a href="#netherlands">Netherlands</a></li>
+                <li><a href="#maps">Maps</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section class="jumbotron">
+    <div class="hero-text">
+        <h1>it's time to start your</h1>
+        <h1 class="span">adventure</h1>
+    </div>
+    </section>
+    <!-- france -->
+    <section id="france" class="padding-0">
+        
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> France <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+   
+      <ul class="tabs custom-tab" data-tabs id="france-tabs">
+        <li class="tabs-title is-active"><a href="#france-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
+        <li class="tabs-title"><a data-tabs-target="france-lang" href="#france-lang"><i class="fas fa-language"></i><br>Translation</a></li>
+        <li class="tabs-title"><a data-tabs-target="france-gallery" href="#france-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
+      </ul>
+  
+      <div class="tabs-content" data-tabs-content="france-tabs">
+        <div class="tabs-panel is-active padding-3" id="france-info">
+          <div class="flex p-2">
+            <div class="columns medium-4 flag"><img src="./assets/images/france/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
+              <div class="intro">France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine.
+
+              </div>
+              <ul class="list-style-image">
+                <li>Capital City: <span id="capital-france"></span></li>
+                <li>Region: <span id="area-france"></span></li>
+                <li>Currency: <span id="currency-france"></span></li>
+                <li>Spoken Language: <span id="language-france"></span></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+        <div class="tabs-panel" id="france-lang">
+          <div class="trans-tab flex ">
+           <div class="columns p-2"> Most useful phrases in French: </div>
+            <div class="columns medium-5">
+              <ul class="no-bullet trans-li">
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+              </ul>
+            </div>
+            <div class="columns medium-6">
+              <ul class="no-bullet trans-li">
+                <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak french. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="france-gallery">
+            <div class="flex">
+                <div class="columns medium-8"> 
+                    <img src="./assets/images/france/paris.jpg" alt="">
+                    <h6>Eiffel Tower - Paris, France</h6>
+                </div>
+                <div class="columns medium-4">
+                    <img src="./assets/images/france/Arc-de-Triomphe-Paris-h.jpg" alt="">
+                    <h6>Arc de Triomphe - Paris,France</h6>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="columns medium-4">
+                    <img src="./assets/images/france/le-mont-saint-michel-h.jpg" alt="">
+                    <h6>Mont Saint-Michel, France</h6>
+                </div>
+                <div class="columns medium-4 flex-col">
+                    <div>
+                        <img src="./assets/images/france/Louvre-Museum-Paris.jpg" alt="">
+                        <h6>Louvre Museum - Paris, France</h6>
+                    </div>
+                    <div>
+                        <img src="./assets/images/france/laon.jpg" alt="">
+                        <h6>Laon, France</h6>
+                    </div>
+                </div>
+                <div class="columns medium-4">
+                    <img src="./assets/images/france/colmar-h.jpg" alt="">
+                    <h6>Colmar, France</h6>
+                </div>
+                
+               
+            </div> 
+          </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <!-- spain -->
+    <section id="spain" class="padding-0">
+        <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Spain <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+   
+      <ul class="tabs custom-tab" data-tabs id="spain-tabs">
+        <li class="tabs-title is-active"><a href="#spain-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
+        <li class="tabs-title"><a data-tabs-target="spain-lang" href="#spain-lang"><i class="fas fa-language"></i><br>Translation</a></li>
+        <li class="tabs-title"><a data-tabs-target="spain-gallery" href="#spain-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
+      </ul>
+  
+      <div class="tabs-content" data-tabs-content="spain-tabs">
+        <div class="tabs-panel is-active" id="spain-info">
+          <div class="flex p-2">
+            
+            <div class="columns large-8">
+              <div class="intro">Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct.
+
+              </div>
+              <ul class="list-style-image">
+                <li>Capital City: <span id="capital-spain"></span></li>
+                <li>Region: <span id="area-spain"></span></li>
+                <li>Currency: <span id="currency-spain"></span></li>
+                <li>Spoken Language: <span id="language-spain"></span></li>
+              </ul>
+            </div>
+            <div class="columns medium-4 flag"><img src="./assets/images/spain/flag.jpg" alt=""></div>
+          </div> 
+        </div>
+        <div class="tabs-panel" id="spain-lang">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Spanish: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak spanich. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
+        </div>
+        <div class="tabs-panel " id="spain-gallery">
+            <div class="flex">
+                <div class="columns medium-8"> 
+                    <img src="./assets/images/spain/barcelona.jpg" alt="">
+                    <h6>Tibidabo Amusement Park - Barcelona, Spain</h6>
+                </div>
+                <div class="columns medium-4">
+                    <img src="./assets/images/spain/madrid-h.jpg" alt="">
+                    <h6>Madrid, Spain</h6>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="columns medium-4">
+                    <img src="./assets/images/spain/granada-h.jpg" alt="">
+                    <h6>Alhambra - Granada,Spain</h6>
+                </div>
+                <div class="columns medium-4 flex-col">
+                    <div>
+                        <img src="./assets/images/spain/sevilla.jpg" alt="">
+                        <h6>Sevilla, Spain</h6>
+                    </div>
+                    <div>
+                        <img src="./assets/images/spain/Palafrugell.jpg" alt="">
+                        <h6>Palafrugell, Spain</h6>
+                    </div>
+                </div>
+                <div class="columns medium-4">
+                    <img src="./assets/images/spain/mijas-h.jpg" alt="">
+                    <h6>Mijas, Spain</h6>
+                </div>
+               
+            </div> 
+              
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <!-- italy -->
+    <section id="italy" class="padding-0">
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Italy <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+   
+      <ul class="tabs custom-tab" data-tabs id="italy-tabs">
+        <li class="tabs-title is-active"><a href="#italy-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
+        <li class="tabs-title"><a data-tabs-target="italy-lang" href="#italy-lang"><i class="fas fa-language"></i><br>Translation</a></li>
+        <li class="tabs-title"><a data-tabs-target="italy-gallery" href="#italy-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
+      </ul>
+  
+      <div class="tabs-content" data-tabs-content="italy-tabs">
+        <div class="tabs-panel is-active" id="italy-info">
+          <div class="flex p-2">
+            <div class="columns medium-4 flag"><img src="./assets/images/italy/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
+              <div class="intro">Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.
+
+              </div>
+              <ul class="list-style-image">
+                <li>Capital City: <span id="capital-italy"></span></li>
+                <li>Region: <span id="area-italy"></span></li>
+                <li>Currency: <span id="currency-italy"></span></li>
+                <li>Spoken Language: <span id="language-italy"></span></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+        <div class="tabs-panel" id="italy-lang">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Italian: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak italian. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
+        </div>
+        <div class="tabs-panel" id="italy-gallery">
+            <div class="flex">
+              <div class="columns medium-8"> 
+                  <img src="./assets/images/italy/burano-venice.jpg" alt="">
+                  <h6>Venice, Italy</h6>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/italy/venezia-h.jpg" alt="">
+                  <h6>Rialto Bridge - Venezia, Italy</h6>
+              </div>
+          </div>
+          <div class="flex">
+              <div class="columns medium-4">
+                  <img src="./assets/images/italy/bellagio-h.jpg" alt="">
+                  <h6>Bellagio - Province of Como, Italy</h6>
+              </div>
+              <div class="columns medium-4 flex-col">
+                  <div>
+                      <img src="./assets/images/italy/milano.jpg" alt="">
+                      <h6>Alzaia Naviglio Grande - Milano, Italy</h6>
+                  </div>
+                  <div>
+                      <img src="./assets/images/italy/roma.jpg" alt="">
+                      <h6>Colosseum - Roma, Italy</h6>
+                  </div>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/italy/manarola-h.jpg" alt="">
+                  <h6>Manarola - SP, Italy</h6>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="germany" class="padding-0">
+        <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> germany <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+   
+      <ul class="tabs custom-tab" data-tabs="" id="germany-tabs">
+        <li class="tabs-title is-active"><a href="#germany-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
+        <li class="tabs-title"><a data-tabs-target="germany-lang" href="#germany-lang"><i class="fas fa-language"></i><br>Translation</a></li>
+        <li class="tabs-title"><a data-tabs-target="germany-gallery" href="#germany-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
+      </ul>
+  
+      <div class="tabs-content" data-tabs-content="germany-tabs">
+        <div class="tabs-panel is-active" id="germany-info">
+          <div class="flex p-2">
+            <div class="columns medium-8">
+              <div class="intro">Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.
+              </div>
+              <ul class="list-style-image">
+                <li>Capital City: <span id="capital-germany"></span></li>
+                <li>Region: <span id="area-germany"></span></li>
+                <li>Currency: <span id="currency-germany"></span></li>
+                <li>Spoken Language: <span id="language-germany"></span></li>
+              </ul>
+            </div>
+            <div class="columns medium-4 flag"><img src="./assets/images/germany/flag.jpg" alt=""></div>
+          </div> 
+        </div>
+        <div class="tabs-panel" id="germany-lang">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in German: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak german. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
+        </div>
+        <div class="tabs-panel" id="germany-gallery">
+            <div class="flex">
+              <div class="columns medium-8"> 
+                  <img src="./assets/images/germany/berlin.jpg" alt="">
+                  <h6>Berlin, germany</h6>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/germany/Heidelberg-h.jpg" alt="">
+                  <h6>Heidelberg, Germany</h6>
+              </div>
+          </div>
+          <div class="flex">
+              <div class="columns medium-4">
+                  <img src="./assets/images/germany/Rothenburg-ob-der-Tauber-h.jpg" alt="">
+                  <h6>Rothenburg, Germany</h6>
+              </div>
+              <div class="columns medium-4 flex-col">
+                  <div>
+                      <img src="./assets/images/germany/Cochem.jpg" alt="">
+                      <h6>Cochem, Germany</h6>
+                  </div>
+                  <div>
+                      <img src="./assets/images/germany/Limburg-an-der-Lahn.jpg" alt="">
+                      <h6>Limburg cathedral, Germany</h6>
+                  </div>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/germany/Nuremberg-h.jpg" alt="">
+                  <h6>Nuremberg, Germany</h6>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="netherlands" class="padding-0">
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> netherlands <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+   
+      <ul class="tabs custom-tab" data-tabs id="netherlands-tabs">
+        <li class="tabs-title is-active"><a href="#netherlands-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
+        <li class="tabs-title"><a data-tabs-target="netherlands-lang" href="#netherlands-lang"><i class="fas fa-language"></i><br>Translation</a></li>
+        <li class="tabs-title"><a data-tabs-target="netherlands-gallery" href="#netherlands-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
+      </ul>
+  
+      <div class="tabs-content" data-tabs-content="netherlands-tabs">
+        <div class="tabs-panel is-active" id="netherlands-info">
+          <div class="flex p-2">
+            <div class="columns medium-4 flag"><img src="./assets/images/netherlands/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
+              <div class="intro">Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century "Golden Age."
+
+              </div>
+              <ul class="list-style-image">
+                <li>Capital City: <span id="capital-netherlands"></span></li>
+                <li>Region: <span id="area-netherlands"></span></li>
+                <li>Currency: <span id="currency-netherlands"></span></li>
+                <li>Spoken Language: <span id="language-netherlands"></span></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+        <div class="tabs-panel" id="netherlands-lang">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Dutch: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello!      </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you!  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me.    </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __.  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help!       </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak dutch.   </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __.    </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM?      </li>
+               </ul>
+             </div>
+           </div>
+        </div>
+        <div class="tabs-panel" id="netherlands-gallery">
+            <div class="flex">
+              <div class="columns medium-8"> 
+                  <img src="./assets/images/netherlands/amsterdam2.jpg" alt="">
+                  <h6>Amsterdam, Netherlands</h6>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/netherlands/amsterdam-h.jpg" alt="">
+                  <h6>Amsterdam, Netherlands</h6>
+              </div>
+          </div>
+          <div class="flex">
+              <div class="columns medium-4">
+                  <img src="./assets/images/netherlands/Groningen-h.jpg" alt="">
+                  <h6>Groningen, Netherlands</h6>
+              </div>
+              <div class="columns medium-4 flex-col">
+                  <div>
+                      <img src="./assets/images/netherlands/Zaanse-Schans-Amsterdam.jpg" alt="">
+                      <h6>Zaanse Schans, Zaanstad, Netherlands</h6>
+                  </div>
+                  <div>
+                      <img src="./assets/images/netherlands/Deventer.jpg" alt="">
+                      <h6>Deventer, Netherlands</h6>
+                  </div>
+              </div>
+              <div class="columns medium-4">
+                  <img src="./assets/images/netherlands/Utrecht-h.jpg" alt="">
+                  <h6>Utrcht, Netherlands</h6>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="maps" class="padding-0">
+      <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> maps <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+      <div>
+        <?xml version="1.0"?>
+<svg baseprofile="tiny" stroke-linecap="round" stroke-linejoin="round" version="1.2" viewbox="0 0 1500 857"  xmlns="http://www.w3.org/2000/svg">
+ <a xlink:title="Germany" xlink:href="https://en.wikipedia.org/wiki/Germany" target="_blank">
+ <path d="M1053.9 158.9l1.4 3.1-1.2 1.7 1.9 2.1 1.5 3.3-0.2 2.2 2.4 3.9-2.2 0.6-1.3-0.7-1.1 1.2-3.5 1.2-1.7 1.6-3.4 1.3 1 1.8 0.7 2.7 2.6 1.5 3 2.6-1.6 2.9-1.7 0.8 1 4.1-0.4 1.1-1.7-1.3-2.4-0.2-3.5 1.1-4.4-0.3-0.6 1.7-2.7-1.7-1.4 0.3-5.5-1.9-1 1.3-4.2 0 0.4-4.5 2.4-4.2-7.2-1.2-2.4-1.6 0.2-2.7-1-1.4 0.4-4.2-1.1-6.5 2.9 0 1.2-2.3 0.9-5.6-0.9-2.1 0.8-1.3 4-0.3 1 1.3 3.1-3-1.3-2.3-0.4-3.4 3.7 0.8 2.9-0.9 0.3 2.3 4.9 1.4 0.1 2.2 4.7-1.2 2.6-1.6 5.6 2.4 2.4 1.9z" id="DE" name="Germany">
+ </path></a>
+ <a xlink:title="Italy" xlink:href="https://en.wikipedia.org/wiki/Italy" target="_blank">
+ <path class="Italy" id="IT" d="M 1068.2 256.4 1066.5 261.5 1067.4 263.4 1066.5 266.7 1062.3 264.3 1059.6 263.6 1052.1 260.4 1052.6 257.1 1058.8 257.7 1064.2 257 1068.2 256.4 Z">
+ </path> 
+ <path class="Italy" d="M 1034.2 237.4 1037.5 241.9 1037.1 250.4 1034.7 250 1032.6 252.1 1030.6 250.4 1030.1 242.7 1028.8 239.1 1031.7 239.4 1034.2 237.4 Z">
+ </path>
+ <path class="Italy" d="M 1055.9 203.9 1055.5 207 1056.9 209.7 1052.8 208.7 1048.9 211 1049.3 214.1 1048.8 215.9 1050.7 219.1 1055.7 222.3 1058.6 227.6 1064.7 232.7 1068.7 232.6 1070.1 234 1068.7 235.3 1073.5 237.6 1077.5 239.5 1082.2 242.9 1082.8 244 1082 246.3 1078.9 243.3 1074.3 242.3 1072.4 246.4 1076.3 248.8 1075.9 252.1 1073.8 252.5 1071.3 258 1069.1 258.5 1069 256.5 1069.9 253.1 1071 251.7 1068.7 248 1066.9 244.8 1064.7 244 1062.9 241.3 1059.5 240.1 1057.1 237.5 1053.3 237.1 1049 234.3 1044.1 230.1 1040.4 226.5 1038.5 220.2 1035.9 219.5 1031.7 217.4 1029.4 218.2 1026.5 221.2 1024.4 221.6 1024.9 218.9 1022.1 218.1 1020.6 213.2 1022.3 211.3 1020.8 208.9 1020.9 207.1 1023.1 208.5 1025.6 208.2 1028.3 206 1029.2 207 1031.6 206.8 1032.6 204.3 1036.4 205.1 1038.5 204 1038.8 201.5 1041.9 202.4 1042.4 201.2 1047.3 200.1 1048.6 202.2 1055.9 203.9 Z">
+ </path></a>
+ <a xlink:title="Netherlands" xlink:href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">
+ <path d="M1016.5 177.1l-2.8-1.5-3.1-2.7-4.5 1.3-3.6-0.5 2.5-1.7 4-9 6.5-2.6 4 0.2 0.9 2.1-0.9 5.6-1.2 2.3-2.9 0 1.1 6.5z" id="NL" name="Netherlands">
+ </path></a>
+ <a xlink:title="Spain" xlink:href="https://en.wikipedia.org/wiki/Spain" target="_blank">
+ <path d="M976.6 223.4l2 2.4 9.5 2.9 1.9-1.4 5.8 2.9 5.9-0.8 0.4 3.7-4.9 4.2-6.6 1.4-0.5 2.1-3.2 3.5-2 5.2 2 3.7-3 2.8-1.2 4.2-4 1.3-3.7 4.9-6.8 0.1-5-0.1-3.4 2.2-2.1 2.4-2.6-0.5-1.9-2.2-1.4-3.6-4.9-1-0.4-2.2 2-2.4 0.8-1.7-1.8-1.9 1.6-4.2-2-3.8 2.3-0.5 0.3-3.1 0.8-0.9 0.3-5 2.4-1.7-1.3-3.2-3.1-0.2-0.9 0.8-3 0-1.2-3.1-2.2 0.9-1.9 1.6 0.5-4.5-2-2.7 7.4-4.6 6.2 1.1 6.9 0 5.4 1.1 4.3-0.4 8.3 0.3z" id="ES" name="Spain">
+ </path></a>
+ <a xlink:title="France" xlink:href="https://en.wikipedia.org/wiki/France" target="_blank">
+ <path id="FR" class="France" d="M 1035.7 231.4 1034.2 236.3 1031.8 235 1030.5 230.8 1031.4 228.4 1034.6 226 1035.7 231.4 Z">
+ </path>
+ <path class="France" d="M 1014.4 185 1015.5 185.5 1016.9 185.4 1019.3 187 1026.5 188.2 1024.1 192.4 1023.7 196.9 1022.4 198 1020.1 197.4 1020.3 199 1016.7 202.5 1016.7 205.4 1019.1 204.4 1020.9 207.1 1020.8 208.9 1022.3 211.3 1020.6 213.2 1022.1 218.1 1024.9 218.9 1024.4 221.6 1019.9 225.2 1009.7 223.5 1002.3 225.6 1001.7 229.4 995.8 230.2 990 227.3 988.1 228.7 978.6 225.8 976.6 223.4 979.3 219.6 980.3 207 975.2 200.4 971.5 197.2 963.9 194.8 963.5 190.2 970 188.9 978.3 190.5 976.8 183.4 981.5 186.1 992.9 181.3 994.4 176.2 998.6 174.9 999.4 177.1 1001.6 177.2 1004 179.7 1007.5 182.6 1010 182.1 1014.4 185 Z">
+ </path></a>
+ <a xlink:title="Spain" xlink:href="https://en.wikipedia.org/wiki/Spain" target="_blank">
+ <path class="Canary Islands (Spain)" d="M 888.4 323.4 888.1 323.9 887.7 324.4 887.4 324 887 324 886.8 323.8 887 323.5 887.4 323.6 887.8 323.2 888.1 323 888.3 323.1 888.4 323.4 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 902 321.1 902 321.6 902.2 322 902 322.7 902.1 323 901.7 323.4 901.2 323.6 901 323.8 900.4 323.6 899.9 323.1 899.7 322.7 899.7 322.1 900.3 321.7 900.4 321.2 900.4 321 901 321.1 901.4 321.1 901.7 321.2 902 321.1 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 892.1 321.9 891.9 321.9 891.6 321.7 891.4 321.4 891.5 321 891.6 320.7 891.9 320.7 892.2 320.7 892.7 321.1 892.8 321.4 892.3 321.9 892.1 321.9 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 898.2 318.4 898.2 318.6 897.6 318.9 897.2 319.4 896.9 319.6 896.9 320 896.5 320.7 896.4 321.1 895.9 321.7 895.8 321.9 895.6 321.9 895 322.1 894.9 322 894.8 321.6 894.5 321.2 894.4 321 894.2 320.7 894.2 320.4 893.8 319.8 894.3 319.5 894.6 319.7 895.2 319.5 895.6 319.5 896.1 319.3 896.6 318.9 896.6 318.7 897.2 318.4 897.8 318.4 898.1 318.3 898.2 318.4 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 908.4 321.2 908.1 321.6 907.7 321.7 907.4 321.6 907 321.6 907 321.4 907.3 321.4 907.9 321.2 908.3 320.9 908.6 320.6 908.7 320.1 908.8 319.8 909 319.3 909.3 318.9 909.6 318.3 909.8 317.5 910 317.3 910.4 317.2 910.7 317.5 910.8 318 910.7 318.5 910.6 319 910.6 319.5 910.5 319.6 910.2 320.3 909.9 320.6 909.3 320.7 908.6 321 908.4 321.2 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 888.8 316.7 889.1 316.6 889.3 316.9 889.5 317.4 889.3 317.7 889.4 318.1 888.8 319.1 888.7 319 888.6 318.6 888.2 317.7 888.1 317.4 888 317.2 888.2 316.8 888.5 316.6 888.8 316.7 Z">
+ </path>
+ <path class="Canary Islands (Spain)" d="M 912.9 314.7 912.9 315.1 912.7 315.6 912 316.1 911.5 316.2 911.1 316.7 910.6 316.5 910.6 316.4 910.8 316 910.8 315.6 911 315.3 911.3 315.1 911.6 315.1 911.9 314.8 912.4 314.8 912.5 314.7 912.7 314.2 912.9 314.1 913.1 314.3 912.9 314.7 Z">
+ </path></a>
+</svg>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+    <div class="row">
+        <div class="columns large-6 text-center">
+            <h3><a href="/index.html" class="white-text"> travel Buddy</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam ab adipisci ut, et repudiandae deserunt obcaecati animi? <br> Fugiat maxime sapiente aliquam, dolores odit harum facere pariatur.<br> Magni sed et sequi deserunt obcaecati.</p>
+        </div>
+        <div class="columns large-6 text-center">
+            <h3>
+                <a href="/index.html" class="white-text"> Countries</a>
+            </h3>
+            <ul class="no-bullet">
+                <li><a href="#france" class="white-text">France</a></li>
+                <li><a href="#spain" class="white-text">Spain</a></li>
+                <li><a href="#italy" class="white-text">Italy</a></li>
+                <li><a href="#germany" class="white-text">Germany</a></li>
+                <li><a href="netherlands" class="white-text">Netherlands</a></li>
+            </ul>
+        </div>
+    </div>    
+        <div class="center-align gray-text copy-right">
+            
+            &copy; 2021 Travel Buddy | Made by : Khaoula Jabour, Javarris Barnett, Raniah Jeanlys and Kenneth Dodd.
+            
+        </div>
+    </footer>
+
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/what-input.js"></script>
+    <script src="./assets/js/vendor/foundation.min.js"></script>
+    <script src="./assets/js/script.js"></script> 
+    <script>$(document).foundation();</script>   
+</body>
+</html>

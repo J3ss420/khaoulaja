@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #455d58;
+    background-color: #faf7f2;
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 40px;
+}
+h1, h2, h3, h4{
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+button{
+    cursor: pointer;
+    padding: 0 20px;
+}
+a:hover{
+    color: #a0a9a7;
+}
+.white-text{
+    color: #fff;
+}
+.gray-text{
+    color: #a0a9a7;
+}
+.trans-tab{
+    font-size: 1.4rem;
+}
+.text-center{
+    text-align: center;
+}
+.title-bar{
+    background-color: transparent;
+}
+.top-bar{
+    background-color: transparent;
+    padding: 20px 40px;
+}
+.top-bar ul {
+    background-color: transparent;
+}
+
+.top-bar-left a{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.menu a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.menu a:hover{
+    text-shadow: 0px 0px 10px black;
+    border-bottom-style: outset;
+    /* transition: 0.5s; */
+}
+.jumbotron{
+    position: relative;
+    background-image: url(../images/buddy-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron >*{
+    /* /position: relative; */
+    z-index: 3;
+}
+.jumbotron::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+.hero-text h1{
+color: #fff;
+width: 100%;
+font-size: 4rem;
+text-align: center;
+}
+.span{
+    font-family: 'Lobster', cursive;
+}
+footer{
+    /* padding: 30px; */
+    color: #fff;
+    background-color: #223531;
+    padding-top: 20px;
+}
+.copy-right{
+    background-color: #455d58;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.section-title{
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    padding: 30px;
+    padding-bottom: 3rem;
+
+}
+.section-icon{
+    width: 9.12vw;
+}
+.tabs-title>a{
+    color: #a0a9a7;
+    line-height: 0.6;
+    text-align: center;
+    padding: 0.75rem 5vw;
+}
+.tabs-title>a:hover {
+    background-color: #f1f1f1;
+    color: #d0d38f;
+    border-radius: 20px 20px 0 0;
+}
+
+.tabs-title>a[aria-selected=true] {
+    background: #fff;
+    color: #e0d68a; 
+    border-radius: 20px 20px 0 0 ;
+    /* #d0d38f */
+}
+
+.custom-tab{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+.custom-tab li a{
+    font-size: 2rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.list-style-image{
+list-style-image: url('../images/list-style.png');
+}
+.list-style-image li{
+    font-size: 1.4rem;
+}
+.p-2{
+    padding: 2rem;
+}
+ .intro{
+     margin-bottom: 1rem;
+     font-size: 1.4rem;
+ }
+ .intro::first-letter{
+     font-size: 200%;
+     font-weight: 600;
+     font-family: 'Lora' ,serif ;
+ }
+
+
+ @media screen and (max-width: 1024px) {
+     section{
+        padding: 30px 40px;
+     }
+     .title-bar{
+         justify-content: space-between;
+     }
+     .title-bar::before, .title-bar::after{
+         content: none;
+     }
+     .title-bar-title{
+         font-size: 1.5rem;
+     }
+     .top-bar {
+         display: flex;
+         flex-direction: column;
+         background-color: rgba(34, 53, 49, 0.9);
+         float: right;
+     }
+     .hero-text h1{
+         font-size: 3rem;
+     }
+     .section-title{
+         font-size: 3rem;
+         padding: 0 0 30px 0;
+     }
+     .custom-tab li a{
+         font-size: 1.5rem;
+     }
+     .flag{
+         flex:0 320px;
+     }
+     .p-2{
+         padding: 0.3rem;
+     }
+ }
+
+ @media screen and (max-width: 710px) {
+     .trans-tab{
+         font-size: 1.2rem;
+     }
+    .trans-li{
+        font-size: 1.2rem;
+    }
+ }
+ @media screen and (max-width: 640px) {
+     section{
+         padding: 30px;
+     }
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 2.3rem;
+        padding: 0 0 20px 0;
+    }
+    .tabs-title>a{
+        padding: 0.5rem 3vw;
+    }
+    .custom-tab li a{
+        font-size: 1.2rem;
+    }
+     .intro{
+         font-size: 1.2rem;
+     }
+     .list-style-image li{
+         font-size: 1.2rem;
+     }
+
+ }
+
+ @media screen and (max-width: 370px) {
+    section{
+        padding: 20px;
+    }
+    button{
+        padding: 0;
+    }
+    .hero-text h1{
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .custom-tab li a{
+        font-size: 1rem;
+    }
+    .intro{
+        font-size: 1rem;
+    }
+    .list-style-image li{
+        font-size: 1rem;
+    }
+ }
